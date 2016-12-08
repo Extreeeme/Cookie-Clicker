@@ -1,3 +1,4 @@
-var age = 23;
+
 userAge = prompt("Indiquez votre âge");
-alert(userAge);
+ageSoeur = ageSoeur - 4;
+alert(ageSoeur);
