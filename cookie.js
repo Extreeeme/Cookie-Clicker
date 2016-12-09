@@ -1,17 +1,16 @@
-// un jour *un singe* *dislexique* ayant perdu
-// *la vue* qui s\'appelle *Jean-Moris*
-var animal;
-var maladie;
-var sens;
-var nom;
-var question = 4;
+//var animal;
+//var maladie;
+//var sens;
+//var nom;
+var questions = 4;
+var tab=new Array;
 
-alert('Bonjour, nous allons te poser une série de quatre questions.');
-nom = prompt('Il vous reste '+question+ ' questions. Comment t\'appelles tu ?');
-question -= 1;
-maladie = prompt('Il vous reste '+question+ ' questions. Cite moi une malaide');
-question -= 1;
-animal = prompt('Il vous reste '+question+ ' questions. Quel est ton animal préféré');
-question -= 1;
-sens = prompt('Il vous reste '+question+ ' questions. Pouvez vous me citer un sens');
-alert('Un jour un/une '+animal+' atteins de/du '+maladie+' ayant perdu '+sens+' qui s\'appelait '+nom);
+alert('Bonjour, nous allons te poser une serie de quatre questions.');
+tab.push(prompt('Il vous reste '+questions+ ' questions. Comment t\'appelles tu?'));
+questions -= 1;
+tab.push(prompt('Il vous reste '+questions+ ' questions. Quel maladie te fais le plus peur?'));
+questions -= 1;
+tab.push(prompt('Il vous reste '+questions+ ' questions. Quel est ton animal préféré?'));
+questions -= 1;
+tab.push(prompt('Il vous reste '+questions+ ' questions. Peux tu me citer un des cinq sens?'));
+alert('un jour un/une '+tab[2]+' atteint du '+tab[1]+' ayant perdu '+tab[3]+' qui s\'appellait '+tab[0]+ '.');
